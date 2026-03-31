@@ -1,0 +1,41 @@
+body {
+  height: 100%;
+}
+.back {
+  position: fixed;
+  top: 1.5vh;
+  left: 1.5vh;
+  font-size: 4vh;
+  height: 5vh;
+  width: 5vh;
+  font-weight: 900;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 1vh;
+  font-family: serif;
+}
+.back:focus {
+  background: brown;
+}
+img {
+  width: 40%;
+  height: 40%;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+h2 {
+  text-align: center;
+  font-size: 2vh;
+  font-family: serif;
+  font-weight: 900;
+  padding: 1vh;
+}
+@media (min-width: 1280px) {
+  h2 {
+  text-align: center;
+  font-size: 5vh;
+  padding: 1vh;
+    font-weight: 900;
+}
+}
