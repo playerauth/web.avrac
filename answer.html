@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Avrac/answer</title>
+  <link rel="stylesheet" href="q-ans-page.css"/>
+</head>
+<body>
+  <center>
+  <div class="top">
+    <input type="search" id="q" readonly class="ans-text" onclick="location.href='index.html'">
+    <div class="tabs">
+      <button id="all">ALL</button>
+      <button id="image">IMAGES</button>
+      <button id="video" onclick="location.href='video.html?q='+encodeURIComponent(q.value)">VIDEOS</button>
+      <button id="news" onclick="location.href='news.html?q='+encodeURIComponent(q.value)">NEWS</button>
+    <button id="maps" onclick="location.href='https://www.google.com/maps/search/'+encodeURIComponent(q.value)">MAPS</button>
+      <button id="shop" onclick="location.href='https://www.amazon.com/s?k='+encodeURIComponent(q.value)">SHOPPING</button>
+         </div>
+    <div class="divide">
+         </div>
+  </div>
+  </center>
+  <div class="goes">
+    <button class="pag" disabled><</button>
+      <p>More</p>
+      <button class="pages" onclick="location.href='next2.html?q='+encodeURIComponent(q.value)">></button>
+</div>
+  <script src="q-ans-page.js"></script>
+  </body>
+</html> 

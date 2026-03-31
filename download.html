@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avrac Download</title>
+  <link rel="stylesheet" href="download.css"/>
+</head>
+<body>
+  <button onclick="history.back()" class="cut">×</button>
+  <!-- TOP APP INFO -->
+  <div class="tops">
+    <img src="avrac.png">
+    <div class="content">
+      <h2>Avrac</h2>
+      <h3>Achieve Deep Results</h3>
+      <p class="rating">Newly Launched (Android Only)</p>
+    </div>
+    <button class="dn" onclick="location.href='https://github.com/playerauth/APPS/releases/download/app/Avrac.apk'">
+      Download
+    </button>
+  </div>
+
+  <!-- DETAILS -->
+  <div class="card">
+    <h3>App Info</h3>
+    <p>Version: 1.0</p>
+    <p>Size: ~2MB</p>
+    <p>Updated: 2026</p>
+    <p>Category: Search Engine</p>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="card">
+    <h3>About this app</h3>
+    <p>
+      Avrac is a powerful privacy focused Indian search engine app designed to deliver fast, accurate, and deep results across the web.
+      It includes multiple 16 tabs like Web, Images, Videos, News, Books, and more to give a complete search experience.
+    </p>
+    <p>The Web of Avrac is just to experience the feel. You will experience real adventure in the mobile app.</p>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="card">
+    <h3>Features</h3>
+    <ul>
+      <li> Fast search results</li>
+      <li>Multiple search tabs</li>
+      <li> Voice search support</li>
+      <li>Latest news integration</li>
+      <li> Deep web results</li>
+       <li>Polished UI</li>
+    </ul>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <h3 class="section-title">Screenshots with query "Cat"</h3>
+  <div class="img-row">
+    <img src="home-page.jpg">
+    <img src="search-page.jpg">
+    <img src="results-page-all.jpg">
+    <img src="mic-page.jpg">
+    <img src="web.jpg">
+    <img src="profile.jpg">
+    <img src="image.jpg">
+    <img src="video.jpg">
+    <img src="news.jpg">
+    <img src="random.jpg">
+    <img src="translate.jpg">
+    <img src="articles.jpg">
+    <img src="books.jpg">
+    <img src="social.jpg">
+    <img src="talk.jpg">
+    <img src="play.jpg">
+  </div>
+
+  <!-- FOOTER NOTE -->
+  <div class="footer">
+    <p>This app is not available in Play Store. Install from here now, we will add on playstore very soon. (IOS app of Avrac comming soon on app store). The
+      browser may give warning but we 100% asume that it is fully safe and secured since it uses trusted google cloud services.
+    </p>
+  </div>
+
+  <script>
+    function isMobileOnly() {
+      return /Android|iPhone/i.test(navigator.userAgent);
+    }
+    if (!isMobileOnly()) {
+      location.href="index.html";
+    }
+  </script>
+
+  <script src="download.js"></script>
+
+</body>
+</html>
