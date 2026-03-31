@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Avrac/IOS/PWA/Install</title>
+  
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="ios-pwa.css"/>
+</head>
+<body>
+
+<div class="app-header">
+  <div class="back-button-container">
+    <a href="index.html" class="back-btn">
+      <i class="fas fa-arrow-left"></i> 
+      <span>Back</span>
+    </a>
+  </div>
+  <div class="header-title">
+    <h1><i class="fas fa-mobile-alt" style="margin-right: 8px;"></i> Install Avrac</h1>
+    <p>Add to home screen · Quick setup (IOS)</p>
+  </div>
+</div>
+
+<div class="container">
+  
+  <!-- STEP 1 - direct link to visit -->
+  <div class="step-card">
+    <div class="step-header">
+      <div class="step-number">1</div>
+      <div class="step-title">Visit the web app</div>
+    </div>
+    <div class="step-desc">
+      Open the link below to launch Avrac in your browser. Make sure you're using Safari for best results.
+    </div>
+    <a href="https://avrac.playerauth7.workers.dev" class="direct-link-btn" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-external-link-alt"></i>
+      <span class="link-url-text">avrac.playerauth7.workers.dev</span>
+      <i class="fas fa-chevron-right" style="font-size: 0.8rem;"></i>
+    </a>
+    <div class="visual-hint" style="margin-top: 16px;">
+      <i class="fas fa-safari"></i>
+      <span class="visual-label">Open in Safari (required for home screen)</span>
+    </div>
+  </div>
+
+  <!-- STEP 2 - share button visual (no emoji, font awesome) -->
+  <div class="step-card">
+    <div class="step-header">
+      <div class="step-number">2</div>
+      <div class="step-title">Tap share icon</div>
+    </div>
+    <div class="step-desc">
+      In Safari, locate the share button at the bottom of the screen (center toolbar). 
+    </div>
+    <div class="visual-hint">
+      <i class="fas fa-share-alt" style="font-size: 1.8rem;"></i>
+      <span class="visual-label">Share button</span>
+      <span class="badge-light"><i class="fas fa-arrow-down"></i> bottom bar</span>
+    </div>
+    <div class="step-desc" style="margin-top: 10px; font-size: 0.85rem;">
+      It looks like a square with an arrow pointing upward.
+    </div>
+  </div>
+
+  <!-- STEP 3 - add to home screen -->
+  <div class="step-card">
+    <div class="step-header">
+      <div class="step-number">3</div>
+      <div class="step-title">Add to Home Screen</div>
+    </div>
+    <div class="step-desc">
+      Scroll down in the share menu and tap <strong>“Add to Home Screen”</strong>.
+    </div>
+    <div class="visual-hint">
+      <i class="fas fa-plus-circle" style="font-size: 1.7rem;"></i>
+      <span class="visual-label">Add to Home Screen</span>
+      <span class="badge-light"><i class="fas fa-home"></i> install option</span>
+    </div>
+  </div>
+
+  <!-- STEP 4 - confirm add -->
+  <div class="step-card">
+    <div class="step-header">
+      <div class="step-number">4</div>
+      <div class="step-title">Confirm installation</div>
+    </div>
+    <div class="step-desc">
+      A preview window will appear with the Avrac icon. Tap <strong>“Add”</strong> in the upper right corner.
+    </div>
+    <div class="visual-hint" style="gap: 12px;">
+      <i class="fas fa-check-circle" style="color: #2b6e3c;"></i>
+      <span class="visual-label">Tap Add button</span>
+      <span class="badge-light"><i class="fas fa-fingerprint"></i> final step</span>
+    </div>
+  </div>
+
+  <!-- STEP 5 - completion / success card -->
+  <div class="step-card">
+    <div class="step-header">
+      <div class="step-number">✓</div>
+      <div class="step-title">Ready to use</div>
+    </div>
+    <div class="step-desc">
+      The Avrac icon now appears on your device home screen. Tap it anytime to open the app.
+    </div>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 16px;">
+      <div class="badge-light"><i class="fas fa-rocket"></i> instant launch</div>
+      <div class="badge-light"><i class="fas fa-check"></i> no app store required</div>
+      <div class="badge-light"><i class="fas fa-sync-alt"></i> always updated</div>
+    </div>
+    <hr>
+    <div class="step-desc" style="font-size: 0.85rem; margin-top: 4px;">
+      <i class="fas fa-info-circle"></i> For the best experience, keep Safari updated and allow notifications if prompted.
+    </div>
+  </div>
+
+  <div class="footer-info">
+    <i class="fas fa-question-circle"></i> Need help? Make sure you are using Safari browser.
+    The installation adds a standalone icon to your home screen – just like a native app.
+  </div>
+</div>
+
+<!-- No JavaScript used: pure HTML/CSS with Font Awesome icons and direct anchor links -->
+</body>
+</html>
