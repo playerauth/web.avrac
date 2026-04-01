@@ -102,18 +102,18 @@ p i {
 }
 .second-section {
   display: flex;
-  height: 7vh;
+  height: auto;
   overflow-x: auto;
   width: 100vw;
 }
 .second-section button {
-  height: 5vh;
-  width: 20vh;
+  padding: 3vw;
   font-size: 2vh;
   margin-top: 1vh;
   margin-left: 5vw;
   margin-right: 5vw;
   font-weight: 900;
+  margin-bottom: 1vh;
   color: white;
   background: #007bff;
   border: none;
