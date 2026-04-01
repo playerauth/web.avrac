@@ -100,9 +100,19 @@ p i {
   color: red;
   font-weight: 500;
 }
+.second-section {
+  display: flex;
+  height: 7vh;
+  overflow-x: auto;
+  width: 100vw;
+}
 .second-section button {
   height: 5vh;
-  margin-left: 2vh;
+  width: 20vh;
+  font-size: 2vh;
+  margin-top: 1vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
   font-weight: 900;
   color: white;
   background: #007bff;
