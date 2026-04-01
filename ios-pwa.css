@@ -6,7 +6,7 @@
     }
 
     body {
-      background: linear-gradient(135deg, #f5f7ff 0%, #eef2fa 100%);
+      background: linear-gradient(135deg, #f5f7ff 0%, #eef2fa 100%), white;
       font-family: system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
       color: #1a1e2b;
       line-height: 1.5;
@@ -264,7 +264,7 @@
 /* dark mode support */
     @media (prefers-color-scheme: dark) {
       body {
-        background: linear-gradient(135deg, #0f1222 0%, #0a0d1a 100%);
+        background: linear-gradient(135deg, #0f1222 0%, #0a0d1a 100%), #111;
         color: #eef2ff;
       }
       .step-card {
