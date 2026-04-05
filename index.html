@@ -34,7 +34,7 @@
      <div style="position:relative;width:100%;max-width:100%;overflow:hidden;">
 
   <!-- Video with thumbnail -->
-  <video id="vid" poster="thumbnail.jpg" loop playsinline
+  <video id="vid" poster="thumbnail.jpg" playsinline
   style="width:100%;height:auto;object-fit:cover;display:block;">
     <source src="ads.mp4" type="video/mp4">
   </video>
@@ -57,7 +57,6 @@
 
 </div>
 
-<!-- Hide default video controls (extra safety) -->
 <style>
   video::-webkit-media-controls {
     display: none !important;
@@ -68,11 +67,20 @@
   const video = document.getElementById("vid");
   const btn = document.getElementById("playBtn");
 
+  // Play on click
   btn.onclick = function () {
-    video.muted = false;   // enable sound
-    video.play();          // start video
-    btn.style.display = "none"; // hide button
+    video.currentTime = 0;   // always start from beginning
+    video.muted = false;
+    video.play();
+    btn.style.display = "none";
   };
+
+  // When video ends
+  video.addEventListener("ended", function () {
+    video.pause();
+    video.currentTime = 0;     // reset to show thumbnail again
+    btn.style.display = "flex"; // show play button again
+  });
 </script>
   </div>
   <div class="card">
