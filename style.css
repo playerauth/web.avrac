@@ -122,6 +122,20 @@ p i {
 button:focus {
   background: blue;
 }
+.video-section {
+  width: auto;
+  height: auto;
+  margin-top: 1vh;
+  text-align: center;
+  margin-left: 10vw;;
+}
+.video-section video {
+  height: auto !important;
+  margin-top: 2vh;
+  width: 80vw !important;
+  margin-bottom: 2vh;
+  height: auto;
+}
 @media (prefers-color-scheme: dark) {
   body {
     background: #121212;
