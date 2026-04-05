@@ -62,14 +62,12 @@
     display: none !important;
   }
 </style>
-
 <script>
   const video = document.getElementById("vid");
   const btn = document.getElementById("playBtn");
 
   // Play on click
   btn.onclick = function () {
-    video.currentTime = 0;   // always start from beginning
     video.muted = false;
     video.play();
     btn.style.display = "none";
@@ -78,7 +76,9 @@
   // When video ends
   video.addEventListener("ended", function () {
     video.pause();
-    video.currentTime = 0;     // reset to show thumbnail again
+
+    video.load(); // 🔥 THIS forces poster (thumbnail) to show again
+
     btn.style.display = "flex"; // show play button again
   });
 </script>
