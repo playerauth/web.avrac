@@ -30,6 +30,51 @@
     <p>Category: Search Engine</p>
     <p>Ratings: 4.8 <i class="fa-solid fa-star" style="color: orange !important;"></i></p>
   </div>
+  <div class="video-section">
+     <div style="position:relative;width:100%;max-width:100%;overflow:hidden;">
+
+  <!-- Video with thumbnail -->
+  <video id="vid" poster="thumbnail.jpg" loop playsinline
+  style="width:100%;height:auto;object-fit:cover;display:block;">
+    <source src="ads.mp4" type="video/mp4">
+  </video>
+
+  <!-- Play Button -->
+  <div id="playBtn"
+  style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  background:rgba(0,0,0,0.6);
+  color:white;
+  font-size:28px;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer; border: 0.2vh solid white;">
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+</div>
+
+<!-- Hide default video controls (extra safety) -->
+<style>
+  video::-webkit-media-controls {
+    display: none !important;
+  }
+</style>
+
+<script>
+  const video = document.getElementById("vid");
+  const btn = document.getElementById("playBtn");
+
+  btn.onclick = function () {
+    video.muted = false;   // enable sound
+    video.play();          // start video
+    btn.style.display = "none"; // hide button
+  };
+</script>
+  </div>
   <div class="card">
     <h3>About this app</h3>
     <p>
