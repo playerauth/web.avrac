@@ -94,11 +94,14 @@ p i {
   display: none;
 }
 .footer {
-  margin: 3vh;
   text-align: center;
   font-size: 1.8vh;
   color: red;
-  font-weight: 500;
+  color: white;
+  padding: 3vw;
+  background: #0d0d0d;
+  font-weight: bold;
+  margin-top: 2vh;
 }
 .second-section {
   display: flex;
@@ -174,6 +177,7 @@ button:focus {
     box-shadow: 0 1vh 2vh rgba(0,0,0,0.6);
   }
   .footer {
-    color: #ff6b6b;
+    color: black;
+    background: white;
   }
 }
