@@ -90,6 +90,10 @@ p i {
   flex-shrink: 0;
   scroll-snap-align: center;
 }
+.img-row img:hover {
+  transition: transform 0.6s ease;
+  transform: scale(1.1,1.1);
+}
 .img-row::-webkit-scrollbar {
   display: none;
 }
