@@ -1,14 +1,14 @@
 🇮🇳 Avrac (Indian Search Engine)
 
 <p align="center">
-  <img src="https://avrac.playerauth7.workers.dev/icon-192.png" width="120" alt="Avrac Logo">
+  <img src="https://avrac.pages.dev/icon-192.png" width="120" alt="Avrac Logo">
 </p>
 
 ---
 
 🌐 Visit
 
-👉 https://web-avrac.playerauth7.workers.dev
+👉 https://web-avrac.pages.dev
 
 ---
 
